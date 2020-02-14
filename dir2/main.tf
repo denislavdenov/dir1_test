@@ -26,3 +26,8 @@ resource "null_resource" "local_install" {
     timestamp = timestamp()
   }
 }
+
+module "randomname5" {
+  source  = "app.terraform.io/ddenov/randomname/local"
+  version = "0.0.3"
+}
